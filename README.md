@@ -6,25 +6,25 @@
 [![Build Status](https://img.shields.io/travis/bitpay/bitcore-message.svg?branch=master&style=flat-square)](https://travis-ci.org/bitpay/bitcore-message)
 [![Coverage Status](https://img.shields.io/coveralls/bitpay/bitcore-message.svg?style=flat-square)](https://coveralls.io/r/bitpay/bitcore-message?branch=master)
 
-bitcore-message-zcash adds support for verifying and signing zcash messages in [Node.js](http://nodejs.org/) and web browsers.
+bitcore-message-koto adds support for verifying and signing koto messages in [Node.js](http://nodejs.org/) and web browsers.
 
 See [the main bitcore repo](https://github.com/bitpay/bitcore) for more information.
 
 ## Getting Started
 
 ```sh
-npm install bitcore-message-zcash
+npm install bitcore-message-koto
 ```
 
 ```sh
-bower install bitcore-message-zcash
+bower install bitcore-message-koto
 ```
 
 To sign a message:
 
 ```javascript
-var bitcore = require('bitcore-lib-zcash');
-var Message = require('bitcore-message-zcash');
+var bitcore = require('bitcore-lib-koto');
+var Message = require('bitcore-message-koto');
 
 var privateKey = bitcore.PrivateKey.fromWIF('cPBn5A4ikZvBTQ8D7NnvHZYCAxzDZ5Z2TSGW2LkyPiLxqYaJPBW4');
 var signature = Message('hello, world').sign(privateKey);
